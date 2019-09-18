@@ -3,18 +3,18 @@
 : octodns:
     cloudflare:
       proxied: false
-  ttl: 1
+  ttl: 5
   type: A
   value: 34.67.190.70
 one:
   octodns:
     cloudflare:
       proxied: false
-  ttl: 1
+  ttl: 5
   type: CNAME
   value: mbtest.ga.
 subdomainarecords:
-- ttl: 1
+- ttl: 2
   type: A
   value: 34.67.190.70
 two:
