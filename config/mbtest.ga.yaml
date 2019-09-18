@@ -13,14 +13,14 @@ one:
   ttl: 1
   type: CNAME
   value: mbtest.ga.
+subdomainarecords:
+- ttl: 300
+  type: A
+  value: 34.67.190.70
 two:
   octodns:
     cloudflare:
       proxied: true
   ttl: 1
-  type: A
-  value: 34.67.190.70
-subdomainarecords:
-- ttl: 300
   type: A
   value: 34.67.190.70
