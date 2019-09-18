@@ -14,7 +14,7 @@ one:
   type: CNAME
   value: mbtest.ga.
 subdomainarecords:
-- ttl: 300
+- ttl: 1
   type: A
   value: 34.67.190.70
 two:
