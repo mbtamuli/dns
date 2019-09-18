@@ -1,0 +1,26 @@
+---
+? ''
+: octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 34.67.190.70
+one:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: CNAME
+  value: mbtest.ga.
+two:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: A
+  value: 34.67.190.70
+subdomainarecords:
+- ttl: 300
+  type: A
+  value: 34.67.190.70
