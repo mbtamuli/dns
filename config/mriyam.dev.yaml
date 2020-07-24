@@ -1,0 +1,25 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        proxied: false
+    ttl: 1
+    type: A
+    values:
+    - 185.199.108.153
+    - 185.199.109.153
+    - 185.199.110.153
+    - 185.199.111.153
+  - ttl: 1
+    type: MX
+    values:
+    - exchange: gmr-smtp-in.l.google.com.
+      preference: 5
+    - exchange: alt1.gmr-smtp-in.l.google.com.
+      preference: 10
+    - exchange: alt2.gmr-smtp-in.l.google.com.
+      preference: 20
+    - exchange: alt3.gmr-smtp-in.l.google.com.
+      preference: 30
+    - exchange: alt4.gmr-smtp-in.l.google.com.
+      preference: 40

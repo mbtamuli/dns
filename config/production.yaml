@@ -9,7 +9,12 @@ providers:
     token: env/CLOUDFLARE_TOKEN
 
 zones:
-  mbtest.ga.:
+  mriyam.com.:
+    sources:
+      - config
+    targets:
+      - cloudflare
+  mriyam.dev.:
     sources:
       - config
     targets:

@@ -1,0 +1,22 @@
+---
+csgo:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 34.72.139.11
+mc:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 34.93.18.245
+yuipi:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 45.252.74.147
