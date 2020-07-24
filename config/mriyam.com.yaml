@@ -20,3 +20,10 @@ yuipi:
   ttl: 1
   type: A
   value: 45.252.74.147
+odin:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 52.188.211.246
