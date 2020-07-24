@@ -13,13 +13,6 @@ mc:
   ttl: 1
   type: A
   value: 34.93.18.245
-yuipi:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 1
-  type: A
-  value: 45.252.74.147
 odin:
   octodns:
     cloudflare:
@@ -27,3 +20,10 @@ odin:
   ttl: 1
   type: A
   value: 52.188.211.246
+yuipi:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 45.252.74.147
