@@ -1,5 +1,9 @@
 # dns
 
+![Test on PR](https://github.com/mbtamuli/dns/workflows/Test%20on%20pull%20request/badge.svg)
+
+![Deploy on push](https://github.com/mbtamuli/dns/workflows/Deploy%20on%20push/badge.svg)
+
 Mriyam's DNS entries using GitHub Actions. Inspired from [this article](https://byparker.com/blog/2018/use-git-github-to-manage-your-dns-with-octodns/)
 
 ## Making changes
