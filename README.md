@@ -17,6 +17,44 @@ For more details, check here - [Records Documentation](https://github.com/github
 1. _Auto TTL on Cloudflare [equals 300 seconds](https://support.cloudflare.com/hc/en-us/articles/360017421192-Cloudflare-DNS-FAQ#whatdoestheautomaticttlvaluemean)_
 2. _For proxied records, Cloudflare manages TTL, so the value doesn't apply_
 
+## Running locally
+
+From the root of the repo, run
+```
+docker run --rm -it \
+    --env CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
+    --env CLOUDFLARE_TOKEN="$CLOUDFLARE_TOKEN" \
+    --volume $PWD/config:/config \
+    parkr/octodns:v0.9.5 \
+    octodns-sync --config-file ./config/production.yaml
+```
+
+If you want to actually make the change, just add `--doit` at the end.
+
+```
+docker run --rm -it \
+    --env CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
+    --env CLOUDFLARE_TOKEN="$CLOUDFLARE_TOKEN" \
+    --volume $PWD/config:/config \
+    parkr/octodns:v0.9.5 \
+    octodns-sync --config-file ./config/production.yaml --doit
+```
+
+## Initializing another domain
+
+Assuming the domain is on cloudflare, you need to run this from the root of the repo.
+```
+docker run --rm -it \
+    --env CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
+    --env CLOUDFLARE_TOKEN="$CLOUDFLARE_TOKEN" \
+    -v $(pwd):/opt/dns \
+    parkr/octodns:v0.9.5 \
+    octodns-dump \
+    --config-file /opt/dns/config/production.yaml \
+    --output-dir /opt/dns/config \
+    "example.com." \
+    cloudflare
+```
 
 Example records
 
