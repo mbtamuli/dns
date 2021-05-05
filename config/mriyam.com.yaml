@@ -1,29 +1,8 @@
 ---
-csgo:
+controller:
   octodns:
     cloudflare:
       proxied: false
   ttl: 1
   type: A
-  value: 34.72.139.11
-mc:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 1
-  type: A
-  value: 34.93.18.245
-odin:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 1
-  type: A
-  value: 52.188.211.246
-yuipi:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 1
-  type: A
-  value: 45.252.74.147
+  value: 35.196.106.105
