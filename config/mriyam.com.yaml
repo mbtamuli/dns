@@ -5,4 +5,4 @@ controller:
       proxied: false
   ttl: 1
   type: A
-  value: 35.196.106.105
+  value: 35.196.11.186
